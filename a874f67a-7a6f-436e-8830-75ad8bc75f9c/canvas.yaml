@@ -1,0 +1,394 @@
+id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+name: Aadhaar Operational Analytics & Governance Intelligence
+project_id: fa0d3411-2e91-4878-a072-7202cb7fd259
+global_imports: []
+python_global_imports: ''
+r_global_imports: ''
+requirements: []
+linux_packages: []
+environment_variables: []
+is_public: true
+organization_id: 9926a499-be6d-4f0d-a2ef-afcf3ac737bb
+layers:
+- blocks:
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Creates 6-panel dashboard visualizing daily/monthly operations trends,
+      anomalies, growth rates, age-group distribution, and volatility metrics with
+      Zerve design styling
+    height: 1000
+    id: 13508981-168d-49bc-b3a4-43761f16f2ac
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: visualize_temporal_trends_and_anomalies
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 10000
+    y: 1400
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Aggregates Aadhaar enrolment, demographic, and biometric volumes
+      by age group, calculates update ratios, and computes Operational Load Index
+    height: 1000
+    id: 14b6be0b-fb3a-4749-bbf5-d9b3f9986cd4
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: calculate_core_volume_measures
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 6000
+    y: 0
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Measures system resilience by analyzing stress events, recovery times,
+      and capacity metrics to generate a 0-100 resilience score
+    height: 1000
+    id: 15110ae5-489f-4705-a85b-af880156b8f3
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: quantify_system_resilience_recovery
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 14000
+    y: 2800
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Aggregates enrolment, demographic, and biometric data into daily/monthly/yearly
+      trends with MoM and YoY growth metrics
+    height: 1000
+    id: 2866dd0c-c62d-4206-a042-94c79a39938f
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: generate_temporal_measures_and_trends
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 6000
+    y: 1400
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Develops exponential smoothing and weighted moving average forecasting
+      models with 14-day operational forecasts and 95% confidence intervals
+    height: 1000
+    id: 2b440ba2-cc49-4197-a164-436f17cb90e5
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: develop_arima_prophet_forecasting
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 1
+    variables: null
+    width: 1600
+    x: 10000
+    y: 5600
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Defines multi-level early warning thresholds (yellow/orange/red)
+      for operational load using percentiles, growth rates, and leading indicators
+      from update volume patterns
+    height: 1000
+    id: 645ac6d6-8040-4106-9bf3-07dfd53a3e9d
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: identify_early_warning_thresholds
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 12000
+    y: 2800
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Detects operational anomalies using Z-score and IQR thresholds on
+      daily/monthly data; quantifies volatility metrics and identifies peak periods
+    height: 1000
+    id: 7ca06f68-4715-4e9a-967b-4fad4bb9aeac
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: perform_anomaly_detection
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 1
+    variables: null
+    width: 1600
+    x: 8000
+    y: 1400
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Quantifies temporal lead-lag relationships between demographic/biometric
+      updates and operational load across 7-day windows using cross-correlation analysis
+    height: 1000
+    id: 85a3a5be-c25e-480d-8add-329d04120985
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: build_lead_lag_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 10000
+    y: 2800
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: 'Creates five regional and Pareto dashboards: state stress scores,
+      top districts by updates, state contribution Pareto chart with 80% threshold,
+      monthly update growth trends, and state rankings by enrolments vs updates'
+    height: 1000
+    id: 8dbbb17c-ee3e-4c99-b484-c9defe8ca00b
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: visualize_regional_and_pareto_insights
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 1
+    variables: null
+    width: 1600
+    x: 10000
+    y: 4200
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Converts date strings to datetime and extracts Year, Month, Quarter,
+      Month_Year from enrolment, demographic, and biometric datasets
+    height: 1000
+    id: b6acd033-029a-40a0-ac4c-78ac0e61a0a2
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: parse_dates_and_derive_temporal_features
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 2000
+    y: 0
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Identifies enrolment-to-maintenance transition point and detects
+      update fatigue using daily/monthly ratios and growth trends
+    height: 1000
+    id: c115bdae-5a31-4263-b94e-254d8a55d8cf
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: analyze_update_dynamics_and_transition
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 6000
+    y: 4200
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Aggregates enrolment and biometric/demographic updates by state and
+      district, calculating volumes, update ratios, and stress scores for operational
+      capacity analysis
+    height: 1000
+    id: cba843fb-9144-40dc-9ef7-ba1f42c2f48f
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: compute_regional_measures
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 6000
+    y: 2800
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Loads and combines Aadhaar enrolment, demographic, and biometric
+      data from multiple CSV files, then displays schemas and sample records
+    height: 1000
+    id: d9c37d76-5999-4dbe-92e6-9d98346b3b76
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: load_and_standardize_all_files
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 0
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Validates schema consistency across enrolment, demographic, and biometric
+      datasets; confirms geographic and temporal coverage; checks data quality; creates
+      final unified datasets ready for analysis.
+    height: 1000
+    id: e3fd958a-8508-42ad-bb71-68baea0c2b76
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: validate_consistency_and_create_unified_datasets
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 4000
+    y: 0
+  - auto_size: false
+    canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Identifies 80/20 vital contributors across dates, months, states,
+      and districts using Pareto analysis
+    height: 1000
+    id: f10dc7a0-f642-4c23-b0a1-f74f7611bd72
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    name: perform_pareto_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 8000
+    y: 2800
+  canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+  edges:
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: 0c4a494d-89a5-4767-85cb-add9df004e68
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: e3fd958a-8508-42ad-bb71-68baea0c2b76
+    target: 14b6be0b-fb3a-4749-bbf5-d9b3f9986cd4
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: 187d5efa-f25f-4ba5-8bd8-269c3a757ee4
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: 645ac6d6-8040-4106-9bf3-07dfd53a3e9d
+    target: 15110ae5-489f-4705-a85b-af880156b8f3
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: 1e89a249-5526-4feb-90b8-727d799fcb04
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: b6acd033-029a-40a0-ac4c-78ac0e61a0a2
+    target: e3fd958a-8508-42ad-bb71-68baea0c2b76
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: 37768c29-8a68-4871-a173-e4137567417d
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: e3fd958a-8508-42ad-bb71-68baea0c2b76
+    target: cba843fb-9144-40dc-9ef7-ba1f42c2f48f
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: 3d01343b-a2d3-4934-b963-dcd5fe541f8e
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: cba843fb-9144-40dc-9ef7-ba1f42c2f48f
+    target: 8dbbb17c-ee3e-4c99-b484-c9defe8ca00b
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: 5bb9ba80-3779-43ed-8885-657966b286a2
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: 14b6be0b-fb3a-4749-bbf5-d9b3f9986cd4
+    target: 13508981-168d-49bc-b3a4-43761f16f2ac
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: 6c214b7c-4b94-445b-ba94-9d9152b96c27
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: d9c37d76-5999-4dbe-92e6-9d98346b3b76
+    target: b6acd033-029a-40a0-ac4c-78ac0e61a0a2
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: 7df4c5f8-e55d-483e-b204-439bca8fb27e
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: c115bdae-5a31-4263-b94e-254d8a55d8cf
+    target: 8dbbb17c-ee3e-4c99-b484-c9defe8ca00b
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: 8babdfab-bc59-4871-a69d-28b1ad3afcfd
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: 7ca06f68-4715-4e9a-967b-4fad4bb9aeac
+    target: 85a3a5be-c25e-480d-8add-329d04120985
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: a17ecb12-52e0-48eb-b134-63e33ca70121
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: cba843fb-9144-40dc-9ef7-ba1f42c2f48f
+    target: f10dc7a0-f642-4c23-b0a1-f74f7611bd72
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: a9575702-5e51-4837-8c2b-884cd384c171
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: 85a3a5be-c25e-480d-8add-329d04120985
+    target: 645ac6d6-8040-4106-9bf3-07dfd53a3e9d
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: b918e484-fa7c-46dc-a331-788f73e0fc57
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: e3fd958a-8508-42ad-bb71-68baea0c2b76
+    target: c115bdae-5a31-4263-b94e-254d8a55d8cf
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: be1bca8b-d7db-4f17-b903-f9cf4e612b46
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: 2866dd0c-c62d-4206-a042-94c79a39938f
+    target: 7ca06f68-4715-4e9a-967b-4fad4bb9aeac
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: c2360202-6256-4ad6-bfbc-a1ba5fd8c585
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: 7ca06f68-4715-4e9a-967b-4fad4bb9aeac
+    target: 13508981-168d-49bc-b3a4-43761f16f2ac
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: d2fa903d-2eeb-42d0-9bf2-1bcd7f74f786
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: 7ca06f68-4715-4e9a-967b-4fad4bb9aeac
+    target: 2b440ba2-cc49-4197-a164-436f17cb90e5
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: d7f8aed6-8dd8-4165-a6a4-fd3a2496ea15
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: e3fd958a-8508-42ad-bb71-68baea0c2b76
+    target: 2866dd0c-c62d-4206-a042-94c79a39938f
+  - canvas_id: a874f67a-7a6f-436e-8830-75ad8bc75f9c
+    id: ef71d193-e0d5-4d15-80aa-bc807006b808
+    layer_id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+    source: f10dc7a0-f642-4c23-b0a1-f74f7611bd72
+    target: 8dbbb17c-ee3e-4c99-b484-c9defe8ca00b
+  id: 1da9e677-6c25-4e7c-b892-4f0afddd9908
+  name: Aadhaar Operational Analytics & Governance Intelligence
+  type: 1
+assets: []
